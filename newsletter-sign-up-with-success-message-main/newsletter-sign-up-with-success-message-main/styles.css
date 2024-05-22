@@ -1,0 +1,305 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    max-width: 768px;
+    height: 540px;
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.left-section {
+    width: 45%;
+    height: 400px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.signup h1 {
+    text-align: left;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 48px;
+    color: hsl(234, 29%, 20%);
+}
+
+.points {
+    margin-top: 0px;
+}
+
+.line1 {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.line1 img {
+    margin-right: 10px;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+.e-section {
+    display: block;
+    width: 100%;
+}
+
+.e-section input {
+    width: 100%;
+    height: 45px;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+label p {
+    font-size: 10px;
+    color: hsl(234, 29%, 20%);
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#error p {
+    color: rgb(255, 81, 0);
+    display: none;
+    font-size: 10px;
+}
+
+input {
+    outline: none;
+    padding: 20px;
+}
+
+input {
+    border-radius: 6px;
+    border: 1px solid lightgrey;
+    margin-bottom: 20px;
+}
+
+.active {
+    border: 1px solid rgb(255, 81, 0);
+    outline: none;
+}
+
+.active::placeholder {
+    color: rgb(255, 81, 0);
+    font-weight: 700;
+}
+
+input:hover {
+    outline: 2px solid hsl(234, 29%, 20%);
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid hsl(234, 29%, 20%);
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(to right,rgb(255, 91, 118), rgb(255, 81, 0));
+}
+
+button:active {
+    background: white;
+    border: 3px solid rgb(255, 91, 118);
+    color: rgb(255, 91, 118);
+}
+
+.thankyou {
+    width: 425px;
+    height: 435px;
+    background-color: white;
+    border-radius: 30px;
+    display: none;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 55px;
+}
+
+#thanks {
+    height: auto;
+    margin-top: 30px;
+}
+
+#thanks h1 {
+    text-align: left;
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 48px;
+    color: hsl(234, 29%, 20%);
+    line-height: 50px;
+}
+
+#thanks p {
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+span {
+    font-weight: 800;
+}
+
+#thanks button {
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .signup h1 {
+        font-size: 32px;
+    }
+    .signup {
+        gap: 25px;
+        justify-content: space-between;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 680px) {
+    .design {
+        display: none;
+    }
+    .signup {
+        background-image: url(assets/images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: top;
+        height: 100vh;
+        border-radius: 0%;
+    }
+    .left-section {
+        margin: auto;
+        margin-top: 355px;
+        width: 70%;
+    }
+    .points {
+        width: 80%;
+        display: block;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 550px) {
+    .signup {
+        background-size: 80%;
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .left-section {
+        width: 80%;
+        margin-top: 330px;
+    }
+    .signup h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 500px) {
+    .left-section {
+        margin-top: 340px;
+    }
+}
+
+@media (max-width: 450px) {
+    .left-section {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    .signup {
+        background-size: 100%;
+        height: 100vh
+    }
+    .left-section {
+        width: 100%;
+        margin-top: 340px;
+    }
+    .thankyou {
+        height: 100vh;
+        border-radius: 0%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #thanks button {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .left-section {
+        margin-top: 300px
+    }
+    .points {
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    .signup h1 {
+        margin-bottom: 20px;
+    }
+    .thankyou {
+        border-radius: 0%;
+    }
+    .signup {
+        height: auto;
+        padding-bottom: 100px;
+    }
+}
+
+
+
+
